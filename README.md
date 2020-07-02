@@ -1,9 +1,9 @@
 # ansible-onedataportal
 [Ansible](https://docs.ansible.com) playbooks para el despliegue automático del Portal One Data (Portal Satu Data) que comprende [CKAN](https://ckan.org) version 2.8.3 y [Oskari](https://www.oskari.org/) version 1.55.2.
 
-## Requirements
-### Target server
-* Un recientemente instalado [Ubuntu Server 18.04](https://ubuntu.com/download/server) (mínimo de 4 GB RAM y 20 GB de espacio libre) con un usuario que is parte del grupo `sudo` (IMPORTANTE: usar el super usuario no es recomendable ya que, por default, el servidor que provee el playbook `0_provision_server.yml` desactivara el super usuario para mejorar la seguridad). Abajo se encuentra un ejemplo de un usuario llamado `username` que fue creado y agregado al grupo `sudo`. 
+## Requerimientos
+### Servidor objetivo
+* Un [Ubuntu Server 18.04](https://ubuntu.com/download/server) recientemente instalado [Ubuntu Server 18.04](https://ubuntu.com/download/server) (mínimo de 4 GB RAM y 20 GB de espacio libre) con un usuario que es parte del grupo `sudo` (IMPORTANTE: usar el super usuario no es recomendable ya que, por default, el servidor que provee el playbook `0_provision_server.yml` desactivara el super usuario para mejorar la seguridad). Abajo se encuentra un ejemplo de un usuario llamado `username` que fue creado y agregado al grupo `sudo`. 
   ```
   adduser username
   usermod -aG sudo username
